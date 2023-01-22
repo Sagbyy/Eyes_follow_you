@@ -1,0 +1,48 @@
+*, ::before, ::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to top, #160150, #00081c);
+
+  .container {
+    width: 100%;
+    min-height: 900px;
+    height: 100vh;
+
+    .eyes {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      background: #000;
+      display: flex;
+      justify-content: center;
+
+      .eye {
+        width: 240px;
+        height: 120px;
+        border-radius: 50%;
+        background: #fff;
+        margin: 40px;
+        position: relative;
+        overflow: hidden;
+
+        .ball {
+          height: 35px;
+          width: 35px;
+          background: #000000;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
+
